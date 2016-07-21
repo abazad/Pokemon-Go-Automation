@@ -90,7 +90,8 @@ def get_position(locationName):
     locate = GoogleV3()
 
     location = locate.geocode(locationName)
-    
+
+    print('[#]')
     print('[x] Address found: ' + location.address.encode('utf-8'))
 
     return (location.latitude, location.longitude, location.altitude)
@@ -137,10 +138,21 @@ def main():
         pokecoins=player['currency'][0]['amount']
     if 'amount' in player['currency'][1]:
         stardust=player['currency'][1]['amount']
+
+    print('[#]')
     print('[#] Username: ' + str(player['username']))
     print('[#] Acccount Creation: ' + str(creation_date))
+    print('[#] Bag Storage: ' + str(player['item_storage']))
+    print('[#] Pokemon Storage: ' + str(player['poke_storage']))
     print('[#] Stardust: ' + str(stardust))
     print('[#] Pokecoins: ' + str(pokecoins))
+    print('[#]')
+
+    print('[#]')
+
+
+    print('[#] Initalizing automation..')
+    time.sleep(1)
 
 
 
