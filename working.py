@@ -15,7 +15,7 @@ working_thread=None
 gmaps = googlemaps.Client(key=GOOGLEMAPS_KEY)
 rest_time=1
 
-pokemon.list()
+pokemon_list=json.load(open('pokemon.json'))
 
 def getInventoryCount(pgoapi, what):
 	# Get contents of inventory
@@ -42,7 +42,7 @@ def getInventoryCount(pgoapi, what):
 	return '0'
 
 def getPokemonName(id):
-	return pokemonList[int(id)-1]['Name']
+	return str(pokemon_list[int(id)-1]['Name'])
 
 def transferLowLevel(pgoapi, value):
 	# Get contents of inventory
@@ -59,20 +59,24 @@ def transferLowLevel(pgoapi, value):
 						if 'inventory_item_data' in item:
 							if 'pokemon' in item['inventory_item_data']:
 								pokemon = item['inventory_item_data']['pokemon']
-								
-								# Send to transfer processor
-								print ('[o] Sending pokemon to the Professor!')
-								transferLowLevelCP(pgoapi, value, pokemon)
-								time.sleep(2)
-	print pokecount
 
-def transferLowLevelCP(pgoapi,value,pokemon):
-	if 'cp' in pokemon and pokemon['cp'] < value:
-		pgoapi.release_pokemon(pokemon_id=pokemon['id'])
-		response_dict = pgoapi.call()
-		
-		print('[-] Pokemon exchanged successfully!')
-	print('[+] Pokemon CP is above the threshold - returning to bag')
+								if 'cp' in pokemon:
+									cp = pokemon['cp']
+									name = getPokemonName(pokemon['pokemon_id'])
+									if cp < value:
+										# Send to transfer processor
+										print "[#] Sending " + name + "[CP"+str(cp)+ "] to the professor!"
+										#print ('[o] Sending ' + name + ' [CP' + cp +'] to the Professor!')
+										transferLowLevelCP(pgoapi, pokemon, name, cp)
+										pokecount = pokecount + 1
+										time.sleep(2)
+
+	print('[+] Removed ' + str(pokecount) + ' pokemon from bag')
+
+def transferLowLevelCP(pgoapi,pokemon, name, cp):
+	pgoapi.release_pokemon(pokemon_id=pokemon['id'])
+	response_dict = pgoapi.call()
+	print("[-] " + name + "[CP"+str(cp)+"] exchanged successfully!")
 
 def _transfer_low_cp_pokemon(api,value,pokemon):
 	if 'cp' in pokemon and pokemon['cp'] < value:
