@@ -164,7 +164,7 @@ def main():
     print('[#] Initalizing automation..')
     if not config.dev:
         time.sleep(1)
-
+    print(pokemonList)
     working.transferLowLevel(pgoapi, 200)
 
 
