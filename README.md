@@ -5,6 +5,7 @@ This will contain all of my updates and slow build progress on a fully automated
 ## Features
 - [X] Login functions (Google, PTC)
 - [X] Easy to read logging system
+- [X] Automatically clean up inventory (TODO: need to set threshold in command line)
 - [ ] Locate & Spin Pokestops
 
 ## Installation

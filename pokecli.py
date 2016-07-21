@@ -103,7 +103,7 @@ def get_position(locationName):
     return (location.latitude, location.longitude, location.altitude)
 
 def main():
-    print('[x] Initializing PokemonGO Automation v0.1')
+    print('[x] Initializing PokemonGO Automation v0.3')
     time.sleep(1)
     print('[x] PokemonGo Automation [@eggins | /r/pokemongodev | darroneggins.com]')
 
@@ -160,7 +160,6 @@ def main():
 
     print('[#]')
 
-
     print('[#] Initalizing automation..')
     if not config.dev:
         time.sleep(1)
@@ -169,6 +168,18 @@ def main():
     # 1 - Clear out inventory of lower than threshold pokemon
     print ('[+] Cleaning up inventory..')
     working.transferLowLevel(pgoapi, 200)
+    print('[#]')
+    print('[#]')
+
+    # 2 - Implement catching pokemon
+
+    print('[#]')
+    print('[#]')
+
+    # 3 - Implement Spinning Pokestops.
+
+    print('[#]')
+    print('[#]')
 
 
 
