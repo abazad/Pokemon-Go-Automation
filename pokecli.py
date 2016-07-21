@@ -94,6 +94,9 @@ def get_position(locationName):
     print('[#]')
     print('[x] Address found: ' + location.address.encode('utf-8'))
 
+    with open('location.json', 'w') as outfile:
+        json.dump({"lat": location.latitude, "lon": location.longitude, "alt": location.altitude}, outfile)
+
     return (location.latitude, location.longitude, location.altitude)
 
 def main():
@@ -138,6 +141,9 @@ def main():
         pokecoins=player['currency'][0]['amount']
     if 'amount' in player['currency'][1]:
         stardust=player['currency'][1]['amount']
+
+    with open('player.json', 'w') as outfile:
+        json.dump(player, outfile)
 
     print('[#]')
     print('[#] Username: ' + str(player['username']))
