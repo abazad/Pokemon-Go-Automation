@@ -98,7 +98,7 @@ def get_position(locationName):
     print('[x] Address found: ' + location.address.encode('utf-8'))
 
     with open('location.json', 'w') as outfile:
-        json.dump({"lat": location.latitude, "lon": location.longitude, "alt": location.altitude}, outfile)
+        json.dump({'lat': location.latitude, 'lng': location.longitude}, outfile)
 
     return (location.latitude, location.longitude, location.altitude)
 
