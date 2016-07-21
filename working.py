@@ -38,7 +38,10 @@ def getInventoryCount(pgoapi, what):
 		return itemcount
 	return '0'
 
-def transferLowLevel(pgoapi):
+def getPokemonName(id):
+	return pokemonList[int(id)-1]['Name']
+
+def transferLowLevel(pgoapi, value):
 	# Get contents of inventory
 	pgoapi.get_inventory()
 	response_dict = pgoapi.call()
@@ -53,15 +56,20 @@ def transferLowLevel(pgoapi):
 						if 'inventory_item_data' in item:
 							if 'pokemon' in item['inventory_item_data']:
 								pokemon = item['inventory_item_data']['pokemon']
-								pokecount = pokecount + 1
-								#_transfer_low_cp_pokemon(pgoapi,value,pokemon)
-								#time.sleep(1.2)
+								
+								# Send to transfer processor
+								print ('[o] Sending pokemon to the Professor!')
+								transferLowLevelCP(pgoapi, value, pokemon)
+								time.sleep(2)
 	print pokecount
 
 def transferLowLevelCP(pgoapi,value,pokemon):
-	pass
-
-	transfer_low_cp_pokomon_with_dict(api,value,response_dict)
+	if 'cp' in pokemon and pokemon['cp'] < value:
+		pgoapi.release_pokemon(pokemon_id=pokemon['id'])
+		response_dict = pgoapi.call()
+		
+		print('[-] Pokemon exchanged successfully!')
+	print('[+] Pokemon CP is above the threshold - returning to bag')
 
 def _transfer_low_cp_pokemon(api,value,pokemon):
 	if 'cp' in pokemon and pokemon['cp'] < value:

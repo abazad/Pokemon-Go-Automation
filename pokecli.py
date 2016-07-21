@@ -47,6 +47,9 @@ from s2sphere import CellId, LatLng
 
 log = logging.getLogger(__name__)
 
+global pokemon_list
+pokemon_list=json.load(open('pokemon.json'))
+
 global config
 
 # Initialise PGOAPI
@@ -162,7 +165,7 @@ def main():
     if not config.dev:
         time.sleep(1)
 
-    working.getInventoryCount(pgoapi, 'pokemon')
+    working.transferLowLevel(pgoapi, 200)
 
 
 
