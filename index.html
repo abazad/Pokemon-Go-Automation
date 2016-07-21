@@ -47,7 +47,7 @@
       }
       function updateTrainer() {
         loadJSON('location.json',
-          function(data) { loc = data; },
+          function(data) { loc = data; map.panTo({lat: parseInt(loc.lat), lng: parseInt(loc.lng)}); },
           function(xhr) { console.error(xhr);}
         );
         marker.setPosition({lat: parseInt(loc.lat), lng: parseInt(loc.lng)});
