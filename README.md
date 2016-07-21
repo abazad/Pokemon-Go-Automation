@@ -11,7 +11,7 @@ This will contain all of my updates and slow build progress on a fully automated
 ### Windows
 Install Python 2.7
 
-~~`pip install -r requirements.txt`
+`pip install -r requirements.txt`
 
 ### Mac
 > Tutorial written soon
