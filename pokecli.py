@@ -71,9 +71,9 @@ def init_config():
     parser.add_argument("-l", "--location", help="Location", required=required("location"))
     parser.add_argument("-s", "--spinstop", help="SpinPokeStop",action='store_true')
     parser.add_argument("-c", "--cp",help="Set CP less than to transfer(DEFAULT 100)",type=int,default=100)
-    parser.add_argument("-d", "--debug", help="Debug Mode", action='store_true')
+    parser.add_argument("-d", "--dev", help="Dev Mode", action='store_true')
     parser.add_argument("-t", "--test", help="Only parse the specified location", action='store_true')
-    parser.set_defaults(DEBUG=False, TEST=False)
+    parser.set_defaults(DEV=False, TEST=False)
     config = parser.parse_args()
 
     # Passed in arguments shoud trump
@@ -120,7 +120,8 @@ def main():
     # Set player position in-game
     pgoapi.set_position(*position)
     print('[x] Position in-game set as: ' + str(position))
-    time.sleep(1)
+    if not config.dev:
+        time.sleep(1)
 
     # Attempt login
     if not pgoapi.login(config.auth_service, config.username, config.password):
@@ -148,8 +149,8 @@ def main():
     print('[#]')
     print('[#] Username: ' + str(player['username']))
     print('[#] Acccount Creation: ' + str(creation_date))
-    print('[#] Bag Storage: ' + str(player['item_storage']))
-    print('[#] Pokemon Storage: ' + str(player['poke_storage']))
+    print('[#] Bag Storage: ' + str(working.getInventoryCount(pgoapi, 'item')) + '/' + str(player['item_storage']))
+    print('[#] Pokemon Storage: ' + str(working.getInventoryCount(pgoapi, 'pokemon')) + '/' + str(player['poke_storage']))
     print('[#] Stardust: ' + str(stardust))
     print('[#] Pokecoins: ' + str(pokecoins))
     print('[#]')
@@ -158,7 +159,10 @@ def main():
 
 
     print('[#] Initalizing automation..')
-    time.sleep(1)
+    if not config.dev:
+        time.sleep(1)
+
+    working.getInventoryCount(pgoapi, 'pokemon')
 
 
 
