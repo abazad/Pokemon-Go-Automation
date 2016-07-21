@@ -48,7 +48,7 @@ from s2sphere import CellId, LatLng
 
 log = logging.getLogger(__name__)
 
-pokemon.list()
+pokemon_list=json.load(open('pokemon.json'))
 
 global config
 
@@ -165,6 +165,9 @@ def main():
     if not config.dev:
         time.sleep(1)
 
+    # Automation Startup
+    # 1 - Clear out inventory of lower than threshold pokemon
+    print ('[+] Cleaning up inventory..')
     working.transferLowLevel(pgoapi, 200)
 
 
