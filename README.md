@@ -25,7 +25,8 @@ Install Python 2.7
 
 ### Web interface
 
-```cd Pokemon-Go-Automation  
+```cd Pokemon-Go-Automation
+
 python -m SimpleHTTPServer```
 
 > Access through `localhost:8000`
