@@ -29,17 +29,20 @@
         });
       setTimeout(function(){
         placeTrainer();
+        setTimeout(function(){
+          setInterval(updateTrainer, 1000);
+        }, 5000);
       }, 5000);
-      setInterval(updateTrainer, 1000);
       }
       function placeTrainer() {
         loadJSON('location.json',
-          function(data) { loc = data; },
+          function(data) { loc = data; map.setZoom(16); map.panTo({lat: parseInt(loc.lat), lng: parseInt(loc.lng)}); },
           function(xhr) { console.error(xhr);}
         );
         marker = new google.maps.Marker({
           map: map,
-          position: {lat: parseInt(loc.lat), lng: parseInt(loc.lng)}
+          position: {lat: parseInt(loc.lat), lng: parseInt(loc.lng)},
+          icon: "static/trainer-icon.png"
         });
       }
       function updateTrainer() {
