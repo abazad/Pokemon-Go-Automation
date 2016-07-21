@@ -35,6 +35,7 @@ import working
 import time
 import datetime
 import ssl
+import pokemon
 
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -47,8 +48,7 @@ from s2sphere import CellId, LatLng
 
 log = logging.getLogger(__name__)
 
-global pokemon_list
-pokemon_list=json.load(open('pokemon.json'))
+pokemon.list()
 
 global config
 

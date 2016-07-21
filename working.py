@@ -4,6 +4,7 @@ import googlemaps
 import json
 import threading
 import time
+import pokemon
 from pgoapi import PGoApi
 from pgoapi.utilities import f2i, h2f
 from math import radians, sqrt, sin, cos, atan2
@@ -13,6 +14,8 @@ GOOGLEMAPS_KEY = "AIzaSyAZzeHhs-8JZ7i18MjFuM35dJHq70n3Hx4"
 working_thread=None
 gmaps = googlemaps.Client(key=GOOGLEMAPS_KEY)
 rest_time=1
+
+pokemon.list()
 
 def getInventoryCount(pgoapi, what):
 	# Get contents of inventory
