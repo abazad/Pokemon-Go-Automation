@@ -1,6 +1,6 @@
 [
   {
-    "Number": "001",
+    "Number": "1",
     "Name": "Bulbasaur",
     "Classification": "Seed Pokemon",
     "Type I": [
@@ -27,17 +27,17 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "002",
+        "Number": "2",
         "Name": "Ivysaur"
       },
       {
-        "Number": "003",
+        "Number": "3",
         "Name": "Venusaur"
       }
     ]
   },
   {
-    "Number": "002",
+    "Number": "2",
     "Name": "Ivysaur",
     "Classification": "Seed Pokemon",
     "Type I": [
@@ -60,7 +60,7 @@
     "Height": "1.0 m",
     "Previous evolution(s)": [
       {
-        "Number": "001",
+        "Number": "1",
         "Name": "Bulbasaur"
       }
     ],
@@ -70,13 +70,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "003",
+        "Number": "3",
         "Name": "Venusaur"
       }
     ]
   },
   {
-    "Number": "003",
+    "Number": "3",
     "Name": "Venusaur",
     "Classification": "Seed Pokemon",
     "Type I": [
@@ -99,17 +99,17 @@
     "Height": "2.0 m",
     "Previous evolution(s)": [
       {
-        "Number": "001",
+        "Number": "1",
         "Name": "Bulbasaur"
       },
       {
-        "Number": "002",
+        "Number": "2",
         "Name": "Ivysaur"
       }
     ]
   },
   {
-    "Number": "004",
+    "Number": "4",
     "Name": "Charmander",
     "Classification": "Lizard Pokemon",
     "Type I": [
@@ -132,17 +132,17 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "005",
+        "Number": "5",
         "Name": "Charmeleon"
       },
       {
-        "Number": "006",
+        "Number": "6",
         "Name": "Charizard"
       }
     ]
   },
   {
-    "Number": "005",
+    "Number": "5",
     "Name": "Charmeleon",
     "Classification": "Flame Pokemon",
     "Type I": [
@@ -161,7 +161,7 @@
     "Height": "1.1 m",
     "Previous evolution(s)": [
       {
-        "Number": "004",
+        "Number": "4",
         "Name": "Charmander"
       }
     ],
@@ -171,13 +171,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "006",
+        "Number": "6",
         "Name": "Charizard"
       }
     ]
   },
   {
-    "Number": "006",
+    "Number": "6",
     "Name": "Charizard",
     "Classification": "Flame Pokemon",
     "Type I": [
@@ -199,17 +199,17 @@
     "Height": "1.7 m",
     "Previous evolution(s)": [
       {
-        "Number": "004",
+        "Number": "4",
         "Name": "Charmander"
       },
       {
-        "Number": "005",
+        "Number": "5",
         "Name": "Charmeleon"
       }
     ]
   },
   {
-    "Number": "007",
+    "Number": "7",
     "Name": "Squirtle",
     "Classification": "Tiny Turtle Pokemon",
     "Type I": [
@@ -231,17 +231,17 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "008",
+        "Number": "8",
         "Name": "Wartortle"
       },
       {
-        "Number": "009",
+        "Number": "9",
         "Name": "Blastoise"
       }
     ]
   },
   {
-    "Number": "008",
+    "Number": "8",
     "Name": "Wartortle",
     "Classification": "Turtle Pokemon",
     "Type I": [
@@ -259,7 +259,7 @@
     "Height": "1.0 m",
     "Previous evolution(s)": [
       {
-        "Number": "007",
+        "Number": "7",
         "Name": "Squirtle"
       }
     ],
@@ -269,13 +269,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "009",
+        "Number": "9",
         "Name": "Blastoise"
       }
     ]
   },
   {
-    "Number": "009",
+    "Number": "9",
     "Name": "Blastoise",
     "Classification": "Shellfish Pokemon",
     "Type I": [
@@ -293,17 +293,17 @@
     "Height": "1.6 m",
     "Previous evolution(s)": [
       {
-        "Number": "007",
+        "Number": "7",
         "Name": "Squirtle"
       },
       {
-        "Number": "008",
+        "Number": "8",
         "Name": "Wartortle"
       }
     ]
   },
   {
-    "Number": "010",
+    "Number": "10",
     "Name": "Caterpie",
     "Classification": "Worm Pokemon",
     "Type I": [
@@ -326,17 +326,17 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "011",
+        "Number": "11",
         "Name": "Metapod"
       },
       {
-        "Number": "012",
+        "Number": "12",
         "Name": "Butterfree"
       }
     ]
   },
   {
-    "Number": "011",
+    "Number": "11",
     "Name": "Metapod",
     "Classification": "Cocoon Pokemon",
     "Type I": [
@@ -355,7 +355,7 @@
     "Height": "0.7 m",
     "Previous evolution(s)": [
       {
-        "Number": "010",
+        "Number": "10",
         "Name": "Caterpie"
       }
     ],
@@ -365,13 +365,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "012",
+        "Number": "12",
         "Name": "Butterfree"
       }
     ]
   },
   {
-    "Number": "012",
+    "Number": "12",
     "Name": "Butterfree",
     "Classification": "Butterfly Pokemon",
     "Type I": [
@@ -395,17 +395,17 @@
     "Height": "1.1 m",
     "Previous evolution(s)": [
       {
-        "Number": "010",
+        "Number": "10",
         "Name": "Caterpie"
       },
       {
-        "Number": "011",
+        "Number": "11",
         "Name": "Metapod"
       }
     ]
   },
   {
-    "Number": "013",
+    "Number": "13",
     "Name": "Weedle",
     "Classification": "Hairy Pokemon",
     "Type I": [
@@ -432,17 +432,17 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "014",
+        "Number": "14",
         "Name": "Kakuna"
       },
       {
-        "Number": "015",
+        "Number": "15",
         "Name": "Beedrill"
       }
     ]
   },
   {
-    "Number": "014",
+    "Number": "14",
     "Name": "Kakuna",
     "Classification": "Cocoon Pokemon",
     "Type I": [
@@ -465,7 +465,7 @@
     "Height": "0.6 m",
     "Previous evolution(s)": [
       {
-        "Number": "013",
+        "Number": "13",
         "Name": "Weedle"
       }
     ],
@@ -475,13 +475,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "015",
+        "Number": "15",
         "Name": "Beedrill"
       }
     ]
   },
   {
-    "Number": "015",
+    "Number": "15",
     "Name": "Beedrill",
     "Classification": "Poison Bee Pokemon",
     "Type I": [
@@ -504,17 +504,17 @@
     "Height": "1.0 m",
     "Previous evolution(s)": [
       {
-        "Number": "013",
+        "Number": "13",
         "Name": "Weedle"
       },
       {
-        "Number": "014",
+        "Number": "14",
         "Name": "Kakuna"
       }
     ]
   },
   {
-    "Number": "016",
+    "Number": "16",
     "Name": "Pidgey",
     "Classification": "Tiny Bird Pokemon",
     "Type I": [
@@ -544,17 +544,17 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "017",
+        "Number": "17",
         "Name": "Pidgeotto"
       },
       {
-        "Number": "018",
+        "Number": "18",
         "Name": "Pidgeot"
       }
     ]
   },
   {
-    "Number": "017",
+    "Number": "17",
     "Name": "Pidgeotto",
     "Classification": "Bird Pokemon",
     "Type I": [
@@ -580,7 +580,7 @@
     "Height": "1.1 m",
     "Previous evolution(s)": [
       {
-        "Number": "016",
+        "Number": "16",
         "Name": "Pidgey"
       }
     ],
@@ -590,13 +590,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "018",
+        "Number": "18",
         "Name": "Pidgeot"
       }
     ]
   },
   {
-    "Number": "018",
+    "Number": "18",
     "Name": "Pidgeot",
     "Classification": "Bird Pokemon",
     "Type I": [
@@ -620,17 +620,17 @@
     "Height": "1.5 m",
     "Previous evolution(s)": [
       {
-        "Number": "016",
+        "Number": "16",
         "Name": "Pidgey"
       },
       {
-        "Number": "017",
+        "Number": "17",
         "Name": "Pidgeotto"
       }
     ]
   },
   {
-    "Number": "019",
+    "Number": "19",
     "Name": "Rattata",
     "Classification": "Mouse Pokemon",
     "Type I": [
@@ -656,13 +656,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "020",
+        "Number": "20",
         "Name": "Raticate"
       }
     ]
   },
   {
-    "Number": "020",
+    "Number": "20",
     "Name": "Raticate",
     "Classification": "Mouse Pokemon",
     "Type I": [
@@ -684,13 +684,13 @@
     "Height": "0.7 m",
     "Previous evolution(s)": [
       {
-        "Number": "019",
+        "Number": "19",
         "Name": "Rattata"
       }
     ]
   },
   {
-    "Number": "021",
+    "Number": "21",
     "Name": "Spearow",
     "Classification": "Tiny Bird Pokemon",
     "Type I": [
@@ -715,13 +715,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "022",
+        "Number": "22",
         "Name": "Fearow"
       }
     ]
   },
   {
-    "Number": "022",
+    "Number": "22",
     "Name": "Fearow",
     "Classification": "Beak Pokemon",
     "Type I": [
@@ -742,13 +742,13 @@
     "Height": "1.2 m",
     "Previous evolution(s)": [
       {
-        "Number": "021",
+        "Number": "21",
         "Name": "Spearow"
       }
     ]
   },
   {
-    "Number": "023",
+    "Number": "23",
     "Name": "Ekans",
     "Classification": "Snake Pokemon",
     "Type I": [
@@ -770,13 +770,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "024",
+        "Number": "24",
         "Name": "Arbok"
       }
     ]
   },
   {
-    "Number": "024",
+    "Number": "24",
     "Name": "Arbok",
     "Classification": "Cobra Pokemon",
     "Type I": [
@@ -794,13 +794,13 @@
     "Height": "3.5 m",
     "Previous evolution(s)": [
       {
-        "Number": "023",
+        "Number": "23",
         "Name": "Ekans"
       }
     ]
   },
   {
-    "Number": "025",
+    "Number": "25",
     "Name": "Pikachu",
     "Classification": "Mouse Pokemon",
     "Type I": [
@@ -821,13 +821,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "026",
+        "Number": "26",
         "Name": "Raichu"
       }
     ]
   },
   {
-    "Number": "026",
+    "Number": "26",
     "Name": "Raichu",
     "Classification": "Mouse Pokemon",
     "Type I": [
@@ -844,13 +844,13 @@
     "Height": "0.8 m",
     "Previous evolution(s)": [
       {
-        "Number": "025",
+        "Number": "25",
         "Name": "Pikachu"
       }
     ]
   },
   {
-    "Number": "027",
+    "Number": "27",
     "Name": "Sandshrew",
     "Classification": "Mouse Pokemon",
     "Type I": [
@@ -873,13 +873,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "028",
+        "Number": "28",
         "Name": "Sandslash"
       }
     ]
   },
   {
-    "Number": "028",
+    "Number": "28",
     "Name": "Sandslash",
     "Classification": "Mouse Pokemon",
     "Type I": [
@@ -898,13 +898,13 @@
     "Height": "1.0 m",
     "Previous evolution(s)": [
       {
-        "Number": "027",
+        "Number": "27",
         "Name": "Sandshrew"
       }
     ]
   },
   {
-    "Number": "029",
+    "Number": "29",
     "Name": "Nidoran F",
     "Classification": "Poison Pin Pokemon",
     "Type I": [
@@ -922,17 +922,17 @@
     "Height": "0.4 m",
     "Next evolution(s)": [
       {
-        "Number": "030",
+        "Number": "30",
         "Name": "Nidorina"
       },
       {
-        "Number": "031",
+        "Number": "31",
         "Name": "Nidoqueen"
       }
     ]
   },
   {
-    "Number": "030",
+    "Number": "30",
     "Name": "Nidorina",
     "Classification": "Poison Pin Pokemon",
     "Type I": [
@@ -950,7 +950,7 @@
     "Height": "0.8 m",
     "Previous evolution(s)": [
       {
-        "Number": "029",
+        "Number": "29",
         "Name": "Nidoran  F"
       }
     ],
@@ -960,13 +960,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "031",
+        "Number": "31",
         "Name": "Nidoqueen"
       }
     ]
   },
   {
-    "Number": "031",
+    "Number": "31",
     "Name": "Nidoqueen",
     "Classification": "Drill Pokemon",
     "Type I": [
@@ -989,17 +989,17 @@
     "Height": "1.3 m",
     "Previous evolution(s)": [
       {
-        "Number": "029",
+        "Number": "29",
         "Name": "Nidoran F"
       },
       {
-        "Number": "030",
+        "Number": "30",
         "Name": "Nidorina"
       }
     ]
   },
   {
-    "Number": "032",
+    "Number": "32",
     "Name": "Nidoran M",
     "Classification": "Poison Pin Pokemon",
     "Type I": [
@@ -1017,17 +1017,17 @@
     "Height": "0.5 m",
     "Next evolution(s)": [
       {
-        "Number": "033",
+        "Number": "33",
         "Name": "Nidorino"
       },
       {
-        "Number": "034",
+        "Number": "34",
         "Name": "Nidoking"
       }
     ]
   },
   {
-    "Number": "033",
+    "Number": "33",
     "Name": "Nidorino",
     "Classification": "Poison Pin Pokemon",
     "Type I": [
@@ -1045,7 +1045,7 @@
     "Height": "0.9 m",
     "Previous evolution(s)": [
       {
-        "Number": "032",
+        "Number": "32",
         "Name": "Nidoran M"
       }
     ],
@@ -1055,13 +1055,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "034",
+        "Number": "34",
         "Name": "Nidoking"
       }
     ]
   },
   {
-    "Number": "034",
+    "Number": "34",
     "Name": "Nidoking",
     "Classification": "Drill Pokemon",
     "Type I": [
@@ -1084,17 +1084,17 @@
     "Height": "1.4 m",
     "Previous evolution(s)": [
       {
-        "Number": "032",
+        "Number": "32",
         "Name": "Nidoran M"
       },
       {
-        "Number": "033",
+        "Number": "33",
         "Name": "Nidorino"
       }
     ]
   },
   {
-    "Number": "035",
+    "Number": "35",
     "Name": "Clefairy",
     "Classification": "Fairy Pokemon",
     "Type I": [
@@ -1115,13 +1115,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "036",
+        "Number": "36",
         "Name": "Clefable"
       }
     ]
   },
   {
-    "Number": "036",
+    "Number": "36",
     "Name": "Clefable",
     "Classification": "Fairy Pokemon",
     "Type I": [
@@ -1138,13 +1138,13 @@
     "Height": "1.3 m",
     "Previous evolution(s)": [
       {
-        "Number": "035",
+        "Number": "35",
         "Name": "Clefairy"
       }
     ]
   },
   {
-    "Number": "037",
+    "Number": "37",
     "Name": "Vulpix",
     "Classification": "Fox Pokemon",
     "Type I": [
@@ -1167,13 +1167,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "038",
+        "Number": "38",
         "Name": "Ninetales"
       }
     ]
   },
   {
-    "Number": "038",
+    "Number": "38",
     "Name": "Ninetales",
     "Classification": "Fox Pokemon",
     "Type I": [
@@ -1192,13 +1192,13 @@
     "Height": "1.1 m",
     "Previous evolution(s)": [
       {
-        "Number": "037",
+        "Number": "37",
         "Name": "Vulpix"
       }
     ]
   },
   {
-    "Number": "039",
+    "Number": "39",
     "Name": "Jigglypuff",
     "Classification": "Balloon Pokemon",
     "Type I": [
@@ -1219,13 +1219,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "039",
+        "Number": "39",
         "Name": "Jigglypuff"
       }
     ]
   },
   {
-    "Number": "040",
+    "Number": "40",
     "Name": "Wigglytuff",
     "Classification": "Balloon Pokemon",
     "Type I": [
@@ -1242,13 +1242,13 @@
     "Height": "1.0 m",
     "Previous evolution(s)": [
       {
-        "Number": "040",
+        "Number": "40",
         "Name": "Wigglytuff"
       }
     ]
   },
   {
-    "Number": "041",
+    "Number": "41",
     "Name": "Zubat",
     "Classification": "Bat Pokemon",
     "Type I": [
@@ -1275,13 +1275,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "042",
+        "Number": "42",
         "Name": "Golbat"
       }
     ]
   },
   {
-    "Number": "042",
+    "Number": "42",
     "Name": "Golbat",
     "Classification": "Bat Pokemon",
     "Type I": [
@@ -1304,13 +1304,13 @@
     "Height": "1.6 m",
     "Previous evolution(s)": [
       {
-        "Number": "041",
+        "Number": "41",
         "Name": "Zubat"
       }
     ]
   },
   {
-    "Number": "043",
+    "Number": "43",
     "Name": "Oddish",
     "Classification": "Weed Pokemon",
     "Type I": [
@@ -1337,17 +1337,17 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "044",
+        "Number": "44",
         "Name": "Gloom"
       },
       {
-        "Number": "045",
+        "Number": "45",
         "Name": "Vileplume"
       }
     ]
   },
   {
-    "Number": "044",
+    "Number": "44",
     "Name": "Gloom",
     "Classification": "Weed Pokemon",
     "Type I": [
@@ -1370,7 +1370,7 @@
     "Height": "0.8 m",
     "Previous evolution(s)": [
       {
-        "Number": "043",
+        "Number": "43",
         "Name": "Oddish"
       }
     ],
@@ -1380,13 +1380,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "045",
+        "Number": "45",
         "Name": "Vileplume"
       }
     ]
   },
   {
-    "Number": "045",
+    "Number": "45",
     "Name": "Vileplume",
     "Classification": "Flower Pokemon",
     "Type I": [
@@ -1409,17 +1409,17 @@
     "Height": "1.2 m",
     "Previous evolution(s)": [
       {
-        "Number": "043",
+        "Number": "43",
         "Name": "Oddish"
       },
       {
-        "Number": "044",
+        "Number": "44",
         "Name": "Gloom"
       }
     ]
   },
   {
-    "Number": "046",
+    "Number": "46",
     "Name": "Paras",
     "Classification": "Mushroom Pokemon",
     "Type I": [
@@ -1448,13 +1448,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "047",
+        "Number": "47",
         "Name": "Parasect"
       }
     ]
   },
   {
-    "Number": "047",
+    "Number": "47",
     "Name": "Parasect",
     "Classification": "Mushroom Pokemon",
     "Type I": [
@@ -1479,13 +1479,13 @@
     "Height": "1.0 m",
     "Previous evolution(s)": [
       {
-        "Number": "046",
+        "Number": "46",
         "Name": "Paras"
       }
     ]
   },
   {
-    "Number": "048",
+    "Number": "48",
     "Name": "Venonat",
     "Classification": "Insect Pokemon",
     "Type I": [
@@ -1512,13 +1512,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "049",
+        "Number": "49",
         "Name": "Venomoth"
       }
     ]
   },
   {
-    "Number": "049",
+    "Number": "49",
     "Name": "Venomoth",
     "Classification": "Poison Moth Pokemon",
     "Type I": [
@@ -1541,13 +1541,13 @@
     "Height": "1.5 m",
     "Previous evolution(s)": [
       {
-        "Number": "048",
+        "Number": "48",
         "Name": "Venonat"
       }
     ]
   },
   {
-    "Number": "050",
+    "Number": "50",
     "Name": "Diglett",
     "Classification": "Mole Pokemon",
     "Type I": [
@@ -1570,13 +1570,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "051",
+        "Number": "51",
         "Name": "Dugtrio"
       }
     ]
   },
   {
-    "Number": "051",
+    "Number": "51",
     "Name": "Dugtrio",
     "Classification": "Mole Pokemon",
     "Type I": [
@@ -1595,13 +1595,13 @@
     "Height": "0.7 m",
     "Previous evolution(s)": [
       {
-        "Number": "050",
+        "Number": "50",
         "Name": "Diglett"
       }
     ]
   },
   {
-    "Number": "052",
+    "Number": "52",
     "Name": "Meowth",
     "Classification": "Scratch Cat Pokemon",
     "Type I": [
@@ -1622,13 +1622,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "053",
+        "Number": "53",
         "Name": "Persian"
       }
     ]
   },
   {
-    "Number": "053",
+    "Number": "53",
     "Name": "Persian",
     "Classification": "Classy Cat Pokemon",
     "Type I": [
@@ -1645,13 +1645,13 @@
     "Height": "1.0 m",
     "Previous evolution(s)": [
       {
-        "Number": "052",
+        "Number": "52",
         "Name": "Meowth"
       }
     ]
   },
   {
-    "Number": "054",
+    "Number": "54",
     "Name": "Psyduck",
     "Classification": "Duck Pokemon",
     "Type I": [
@@ -1673,13 +1673,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "055",
+        "Number": "55",
         "Name": "Golduck"
       }
     ]
   },
   {
-    "Number": "055",
+    "Number": "55",
     "Name": "Golduck",
     "Classification": "Duck Pokemon",
     "Type I": [
@@ -1697,13 +1697,13 @@
     "Height": "1.7 m",
     "Previous evolution(s)": [
       {
-        "Number": "054",
+        "Number": "54",
         "Name": "Psyduck"
       }
     ]
   },
   {
-    "Number": "056",
+    "Number": "56",
     "Name": "Mankey",
     "Classification": "Pig Monkey Pokemon",
     "Type I": [
@@ -1726,13 +1726,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "057",
+        "Number": "57",
         "Name": "Primeape"
       }
     ]
   },
   {
-    "Number": "057",
+    "Number": "57",
     "Name": "Primeape",
     "Classification": "Pig Monkey Pokemon",
     "Type I": [
@@ -1751,13 +1751,13 @@
     "Height": "1.0 m",
     "Previous evolution(s)": [
       {
-        "Number": "056",
+        "Number": "56",
         "Name": "Mankey"
       }
     ]
   },
   {
-    "Number": "058",
+    "Number": "58",
     "Name": "Growlithe",
     "Classification": "Puppy Pokemon",
     "Type I": [
@@ -1780,13 +1780,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "059",
+        "Number": "59",
         "Name": "Arcanine"
       }
     ]
   },
   {
-    "Number": "059",
+    "Number": "59",
     "Name": "Arcanine",
     "Classification": "Legendary Pokemon",
     "Type I": [
@@ -1805,13 +1805,13 @@
     "Height": "1.9 m",
     "Previous evolution(s)": [
       {
-        "Number": "058",
+        "Number": "58",
         "Name": "Growlithe"
       }
     ]
   },
   {
-    "Number": "060",
+    "Number": "60",
     "Name": "Poliwag",
     "Classification": "Tadpole Pokemon",
     "Type I": [
@@ -1833,17 +1833,17 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "061",
+        "Number": "61",
         "Name": "Poliwhirl"
       },
       {
-        "Number": "062",
+        "Number": "62",
         "Name": "Poliwrath"
       }
     ]
   },
   {
-    "Number": "061",
+    "Number": "61",
     "Name": "Poliwhirl",
     "Classification": "Tadpole Pokemon",
     "Type I": [
@@ -1861,7 +1861,7 @@
     "Height": "1.0 m",
     "Previous evolution(s)": [
       {
-        "Number": "060",
+        "Number": "60",
         "Name": "Poliwag"
       }
     ],
@@ -1871,13 +1871,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "062",
+        "Number": "62",
         "Name": "Poliwrath"
       }
     ]
   },
   {
-    "Number": "062",
+    "Number": "62",
     "Name": "Poliwrath",
     "Classification": "Tadpole Pokemon",
     "Type I": [
@@ -1901,17 +1901,17 @@
     "Height": "1.3 m",
     "Previous evolution(s)": [
       {
-        "Number": "060",
+        "Number": "60",
         "Name": "Poliwag"
       },
       {
-        "Number": "061",
+        "Number": "61",
         "Name": "Poliwhirl"
       }
     ]
   },
   {
-    "Number": "063",
+    "Number": "63",
     "Name": "Abra",
     "Classification": "Psi Pokemon",
     "Type I": [
@@ -1934,17 +1934,17 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "064",
+        "Number": "64",
         "Name": "Kadabra"
       },
       {
-        "Number": "065",
+        "Number": "65",
         "Name": "Alakazam"
       }
     ]
   },
   {
-    "Number": "064",
+    "Number": "64",
     "Name": "Kadabra",
     "Classification": "Psi Pokemon",
     "Type I": [
@@ -1963,7 +1963,7 @@
     "Height": "1.3 m",
     "Previous evolution(s)": [
       {
-        "Number": "063",
+        "Number": "63",
         "Name": "Abra"
       }
     ],
@@ -1973,13 +1973,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "065",
+        "Number": "65",
         "Name": "Alakazam"
       }
     ]
   },
   {
-    "Number": "065",
+    "Number": "65",
     "Name": "Alakazam",
     "Classification": "Psi Pokemon",
     "Type I": [
@@ -1998,17 +1998,17 @@
     "Height": "1.5 m",
     "Previous evolution(s)": [
       {
-        "Number": "063",
+        "Number": "63",
         "Name": "Abra"
       },
       {
-        "Number": "064",
+        "Number": "64",
         "Name": "Kadabra"
       }
     ]
   },
   {
-    "Number": "066",
+    "Number": "66",
     "Name": "Machop",
     "Classification": "Superpower Pokemon",
     "Type I": [
@@ -2031,17 +2031,17 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "067",
+        "Number": "67",
         "Name": "Machoke"
       },
       {
-        "Number": "068",
+        "Number": "68",
         "Name": "Machamp"
       }
     ]
   },
   {
-    "Number": "067",
+    "Number": "67",
     "Name": "Machoke",
     "Classification": "Superpower Pokemon",
     "Type I": [
@@ -2060,7 +2060,7 @@
     "Height": "1.5 m",
     "Previous evolution(s)": [
       {
-        "Number": "066",
+        "Number": "66",
         "Name": "Machop"
       }
     ],
@@ -2070,13 +2070,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "068",
+        "Number": "68",
         "Name": "Machamp"
       }
     ]
   },
   {
-    "Number": "068",
+    "Number": "68",
     "Name": "Machamp",
     "Classification": "Superpower Pokemon",
     "Type I": [
@@ -2095,17 +2095,17 @@
     "Height": "1.6 m",
     "Previous evolution(s)": [
       {
-        "Number": "066",
+        "Number": "66",
         "Name": "Machop"
       },
       {
-        "Number": "067",
+        "Number": "67",
         "Name": "Machoke"
       }
     ]
   },
   {
-    "Number": "069",
+    "Number": "69",
     "Name": "Bellsprout",
     "Classification": "Flower Pokemon",
     "Type I": [
@@ -2132,17 +2132,17 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "070",
+        "Number": "70",
         "Name": "Weepinbell"
       },
       {
-        "Number": "071",
+        "Number": "71",
         "Name": "Victreebel"
       }
     ]
   },
   {
-    "Number": "070",
+    "Number": "70",
     "Name": "Weepinbell",
     "Classification": "Flycatcher Pokemon",
     "Type I": [
@@ -2165,7 +2165,7 @@
     "Height": "1.0 m",
     "Previous evolution(s)": [
       {
-        "Number": "069",
+        "Number": "69",
         "Name": "Bellsprout"
       }
     ],
@@ -2175,13 +2175,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "071",
+        "Number": "71",
         "Name": "Victreebel"
       }
     ]
   },
   {
-    "Number": "071",
+    "Number": "71",
     "Name": "Victreebel",
     "Classification": "Flycatcher Pokemon",
     "Type I": [
@@ -2204,17 +2204,17 @@
     "Height": "1.7 m",
     "Previous evolution(s)": [
       {
-        "Number": "069",
+        "Number": "69",
         "Name": "Bellsprout"
       },
       {
-        "Number": "070",
+        "Number": "70",
         "Name": "Weepinbell"
       }
     ]
   },
   {
-    "Number": "072",
+    "Number": "72",
     "Name": "Tentacool",
     "Classification": "Jellyfish Pokemon",
     "Type I": [
@@ -2240,13 +2240,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "073",
+        "Number": "73",
         "Name": "Tentacruel"
       }
     ]
   },
   {
-    "Number": "073",
+    "Number": "73",
     "Name": "Tentacruel",
     "Classification": "Jellyfish Pokemon",
     "Type I": [
@@ -2268,13 +2268,13 @@
     "Height": "1.6 m",
     "Previous evolution(s)": [
       {
-        "Number": "072",
+        "Number": "72",
         "Name": "Tentacool"
       }
     ]
   },
   {
-    "Number": "074",
+    "Number": "74",
     "Name": "Geodude",
     "Classification": "Rock Pokemon",
     "Type I": [
@@ -2303,17 +2303,17 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "075",
+        "Number": "75",
         "Name": "Graveler"
       },
       {
-        "Number": "076",
+        "Number": "76",
         "Name": "Golem"
       }
     ]
   },
   {
-    "Number": "075",
+    "Number": "75",
     "Name": "Graveler",
     "Classification": "Rock Pokemon",
     "Type I": [
@@ -2338,7 +2338,7 @@
     "Height": "1.0 m",
     "Previous evolution(s)": [
       {
-        "Number": "074",
+        "Number": "74",
         "Name": "Geodude"
       }
     ],
@@ -2348,13 +2348,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "076",
+        "Number": "76",
         "Name": "Golem"
       }
     ]
   },
   {
-    "Number": "076",
+    "Number": "76",
     "Name": "Golem",
     "Classification": "Megaton Pokemon",
     "Type I": [
@@ -2379,17 +2379,17 @@
     "Height": "1.4 m",
     "Previous evolution(s)": [
       {
-        "Number": "074",
+        "Number": "74",
         "Name": "Geodude"
       },
       {
-        "Number": "075",
+        "Number": "75",
         "Name": "Graveler"
       }
     ]
   },
   {
-    "Number": "077",
+    "Number": "77",
     "Name": "Ponyta",
     "Classification": "Fire Horse Pokemon",
     "Type I": [
@@ -2412,13 +2412,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "078",
+        "Number": "78",
         "Name": "Rapidash"
       }
     ]
   },
   {
-    "Number": "078",
+    "Number": "78",
     "Name": "Rapidash",
     "Classification": "Fire Horse Pokemon",
     "Type I": [
@@ -2437,13 +2437,13 @@
     "Height": "1.7 m",
     "Previous evolution(s)": [
       {
-        "Number": "077",
+        "Number": "77",
         "Name": "Ponyta"
       }
     ]
   },
   {
-    "Number": "079",
+    "Number": "79",
     "Name": "Slowpoke",
     "Classification": "Dopey Pokemon",
     "Type I": [
@@ -2471,13 +2471,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "080",
+        "Number": "80",
         "Name": "Slowbro"
       }
     ]
   },
   {
-    "Number": "080",
+    "Number": "80",
     "Name": "Slowbro",
     "Classification": "Hermit Crab Pokemon",
     "Type I": [
@@ -2501,13 +2501,13 @@
     "Height": "1.6 m",
     "Previous evolution(s)": [
       {
-        "Number": "079",
+        "Number": "79",
         "Name": "Slowpoke"
       }
     ]
   },
   {
-    "Number": "081",
+    "Number": "81",
     "Name": "Magnemite",
     "Classification": "Magnet Pokemon",
     "Type I": [
@@ -2533,13 +2533,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "082",
+        "Number": "82",
         "Name": "Magneton"
       }
     ]
   },
   {
-    "Number": "082",
+    "Number": "82",
     "Name": "Magneton",
     "Classification": "Magnet Pokemon",
     "Type I": [
@@ -2561,13 +2561,13 @@
     "Height": "1.0 m",
     "Previous evolution(s)": [
       {
-        "Number": "081",
+        "Number": "81",
         "Name": "Magnemite"
       }
     ]
   },
   {
-    "Number": "083",
+    "Number": "83",
     "Name": "Farfetch'd",
     "Classification": "Wild Duck Pokemon",
     "Type I": [
@@ -2590,7 +2590,7 @@
     "Height": "0.8 m"
   },
   {
-    "Number": "084",
+    "Number": "84",
     "Name": "Doduo",
     "Classification": "Twin Bird Pokemon",
     "Type I": [
@@ -2615,13 +2615,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "085",
+        "Number": "85",
         "Name": "Dodrio"
       }
     ]
   },
   {
-    "Number": "085",
+    "Number": "85",
     "Name": "Dodrio",
     "Classification": "Triple Bird Pokemon",
     "Type I": [
@@ -2642,13 +2642,13 @@
     "Height": "1.8 m",
     "Previous evolution(s)": [
       {
-        "Number": "084",
+        "Number": "84",
         "Name": "Doduo"
       }
     ]
   },
   {
-    "Number": "086",
+    "Number": "86",
     "Name": "Seel",
     "Classification": "Sea Lion Pokemon",
     "Type I": [
@@ -2670,13 +2670,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "087",
+        "Number": "87",
         "Name": "Dewgong"
       }
     ]
   },
   {
-    "Number": "087",
+    "Number": "87",
     "Name": "Dewgong",
     "Classification": "Sea Lion Pokemon",
     "Type I": [
@@ -2699,13 +2699,13 @@
     "Height": "1.7 m",
     "Previous evolution(s)": [
       {
-        "Number": "086",
+        "Number": "86",
         "Name": "Seel"
       }
     ]
   },
   {
-    "Number": "088",
+    "Number": "88",
     "Name": "Grimer",
     "Classification": "Sludge Pokemon",
     "Type I": [
@@ -2727,13 +2727,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "089",
+        "Number": "89",
         "Name": "Muk"
       }
     ]
   },
   {
-    "Number": "089",
+    "Number": "89",
     "Name": "Muk",
     "Classification": "Sludge Pokemon",
     "Type I": [
@@ -2751,13 +2751,13 @@
     "Height": "1.2 m",
     "Previous evolution(s)": [
       {
-        "Number": "088",
+        "Number": "88",
         "Name": "Grimer"
       }
     ]
   },
   {
-    "Number": "090",
+    "Number": "90",
     "Name": "Shellder",
     "Classification": "Bivalve Pokemon",
     "Type I": [
@@ -2779,13 +2779,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "091",
+        "Number": "91",
         "Name": "Cloyster"
       }
     ]
   },
   {
-    "Number": "091",
+    "Number": "91",
     "Name": "Cloyster",
     "Classification": "Bivalve Pokemon",
     "Type I": [
@@ -2808,13 +2808,13 @@
     "Height": "1.5 m",
     "Previous evolution(s)": [
       {
-        "Number": "090",
+        "Number": "90",
         "Name": "Shellder"
       }
     ]
   },
   {
-    "Number": "092",
+    "Number": "92",
     "Name": "Gastly",
     "Classification": "Gas Pokemon",
     "Type I": [
@@ -2841,17 +2841,17 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "093",
+        "Number": "93",
         "Name": "Haunter"
       },
       {
-        "Number": "094",
+        "Number": "94",
         "Name": "Gengar"
       }
     ]
   },
   {
-    "Number": "093",
+    "Number": "93",
     "Name": "Haunter",
     "Classification": "Gas Pokemon",
     "Type I": [
@@ -2874,7 +2874,7 @@
     "Height": "1.6 m",
     "Previous evolution(s)": [
       {
-        "Number": "092",
+        "Number": "92",
         "Name": "Gastly"
       }
     ],
@@ -2884,13 +2884,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "094",
+        "Number": "94",
         "Name": "Gengar"
       }
     ]
   },
   {
-    "Number": "094",
+    "Number": "94",
     "Name": "Gengar",
     "Classification": "Shadow Pokemon",
     "Type I": [
@@ -2913,17 +2913,17 @@
     "Height": "1.5 m",
     "Previous evolution(s)": [
       {
-        "Number": "092",
+        "Number": "92",
         "Name": "Gastly"
       },
       {
-        "Number": "093",
+        "Number": "93",
         "Name": "Haunter"
       }
     ]
   },
   {
-    "Number": "095",
+    "Number": "95",
     "Name": "Onix",
     "Classification": "Rock Snake Pokemon",
     "Type I": [
@@ -2948,7 +2948,7 @@
     "Height": "8.8 m"
   },
   {
-    "Number": "096",
+    "Number": "96",
     "Name": "Drowzee",
     "Classification": "Hypnosis Pokemon",
     "Type I": [
@@ -2971,13 +2971,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "097",
+        "Number": "97",
         "Name": "Hypno"
       }
     ]
   },
   {
-    "Number": "097",
+    "Number": "97",
     "Name": "Hypno",
     "Classification": "Hypnosis Pokemon",
     "Type I": [
@@ -2996,13 +2996,13 @@
     "Height": "1.6 m",
     "Previous evolution(s)": [
       {
-        "Number": "096",
+        "Number": "96",
         "Name": "Drowzee"
       }
     ]
   },
   {
-    "Number": "098",
+    "Number": "98",
     "Name": "Krabby",
     "Classification": "River Crab Pokemon",
     "Type I": [
@@ -3024,13 +3024,13 @@
     },
     "Next evolution(s)": [
       {
-        "Number": "099",
+        "Number": "99",
         "Name": "Kingler"
       }
     ]
   },
   {
-    "Number": "099",
+    "Number": "99",
     "Name": "Kingler",
     "Classification": "Pincer Pokemon",
     "Type I": [
@@ -3048,7 +3048,7 @@
     "Height": "1.3 m",
     "Previous evolution(s)": [
       {
-        "Number": "098",
+        "Number": "98",
         "Name": "Krabby"
       }
     ]
