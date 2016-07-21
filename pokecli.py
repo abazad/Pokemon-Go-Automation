@@ -131,12 +131,16 @@ def main():
     ### @@@ TODO: Convert this to d/m/Y H:M:S
     creation_date = datetime.datetime.fromtimestamp(player['creation_time'] / 1e3)
     
+    pokecoins='0'
     stardust='0'
+    if 'amount' in player['currency'][0]:
+        pokecoins=player['currency'][0]['amount']
     if 'amount' in player['currency'][1]:
         stardust=player['currency'][1]['amount']
     print('[#] Username: ' + str(player['username']))
     print('[#] Acccount Creation: ' + str(creation_date))
     print('[#] Stardust: ' + str(stardust))
+    print('[#] Pokecoins: ' + str(pokecoins))
 
 
 
