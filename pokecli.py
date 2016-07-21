@@ -36,6 +36,7 @@ import time
 import datetime
 import ssl
 import pokemon
+import sys
 
 if sys.version_info >= (2, 7, 9):
     ssl._create_default_https_context = ssl._create_unverified_context
