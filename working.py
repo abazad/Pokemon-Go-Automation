@@ -14,6 +14,76 @@ working_thread=None
 gmaps = googlemaps.Client(key=GOOGLEMAPS_KEY)
 rest_time=1
 
+def getInventoryCount(pgoapi, what):
+	# Get contents of inventory
+	pgoapi.get_inventory()
+	response_dict = pgoapi.call()
+	if 'responses' in response_dict:
+		if 'GET_INVENTORY' in response_dict['responses']:
+			if 'inventory_delta' in response_dict['responses']['GET_INVENTORY']:
+				if 'inventory_items' in response_dict['responses']['GET_INVENTORY']['inventory_delta']:
+					pokecount = 0
+					itemcount = 1
+					for item in response_dict['responses']['GET_INVENTORY']['inventory_delta']['inventory_items']:
+						#print('item {}'.format(item))
+						if 'inventory_item_data' in item:
+							if 'pokemon' in item['inventory_item_data']:
+								pokecount = pokecount + 1
+							if 'item' in item['inventory_item_data']:
+								if 'count' in item['inventory_item_data']['item']:
+									itemcount = itemcount + item['inventory_item_data']['item']['count']
+	if 'pokemon' in what:
+		return pokecount
+	if 'item' in what:
+		return itemcount
+	return '0'
+
+def transferLowLevel(pgoapi):
+	# Get contents of inventory
+	pgoapi.get_inventory()
+	response_dict = pgoapi.call()
+
+	if 'responses' in response_dict:
+		if 'GET_INVENTORY' in response_dict['responses']:
+			if 'inventory_delta' in response_dict['responses']['GET_INVENTORY']:
+				if 'inventory_items' in response_dict['responses']['GET_INVENTORY']['inventory_delta']:
+					pokecount = 0
+					for item in response_dict['responses']['GET_INVENTORY']['inventory_delta']['inventory_items']:
+						#print('item {}'.format(item))
+						if 'inventory_item_data' in item:
+							if 'pokemon' in item['inventory_item_data']:
+								pokemon = item['inventory_item_data']['pokemon']
+								pokecount = pokecount + 1
+								#_transfer_low_cp_pokemon(pgoapi,value,pokemon)
+								#time.sleep(1.2)
+	print pokecount
+
+def transferLowLevelCP(pgoapi,value,pokemon):
+	pass
+
+	transfer_low_cp_pokomon_with_dict(api,value,response_dict)
+
+def _transfer_low_cp_pokemon(api,value,pokemon):
+	if 'cp' in pokemon and pokemon['cp'] < value:
+		print('need release this pokemon({}): {}'.format(value,pokemon))
+		api.release_pokemon(pokemon_id=pokemon['id'])
+		response_dict = api.call()
+		print('Response dictionary: \n\r{}'.format(json.dumps(response_dict, indent=2)))
+def transfer_low_cp_pokomon_with_dict(api,value,response_dict):
+	#print('Response dictionary: \n\r{}'.format(json.dumps(response_dict, indent=2)))
+	if 'responses' in response_dict:
+		if 'GET_INVENTORY' in response_dict['responses']:
+			if 'inventory_delta' in response_dict['responses']['GET_INVENTORY']:
+				if 'inventory_items' in response_dict['responses']['GET_INVENTORY']['inventory_delta']:
+					for item in response_dict['responses']['GET_INVENTORY']['inventory_delta']['inventory_items']:
+						#print('item {}'.format(item))
+						if 'inventory_item_data' in item:
+							if 'pokemon' in item['inventory_item_data']:
+								pokemon = item['inventory_item_data']['pokemon']
+								_transfer_low_cp_pokemon(api,value,pokemon)
+								time.sleep(1.2)
+
+
 def work_on_cell(cell,api,position,config):
 	print cell
 	if 'catchable_pokemons' in cell:
@@ -114,25 +184,6 @@ def encount_and_catch_pokemon(pokemon,api,position,config):
 									print('Captured Pokemon! [CP' + str(cp) + ']')
 						break
 	time.sleep(5)
-def _transfer_low_cp_pokemon(api,value,pokemon):
-	if 'cp' in pokemon and pokemon['cp'] < value:
-		print('need release this pokemon({}): {}'.format(value,pokemon))
-		api.release_pokemon(pokemon_id=pokemon['id'])
-		response_dict = api.call()
-		print('Response dictionary: \n\r{}'.format(json.dumps(response_dict, indent=2)))
-def transfer_low_cp_pokomon_with_dict(api,value,response_dict):
-	#print('Response dictionary: \n\r{}'.format(json.dumps(response_dict, indent=2)))
-	if 'responses' in response_dict:
-		if 'GET_INVENTORY' in response_dict['responses']:
-			if 'inventory_delta' in response_dict['responses']['GET_INVENTORY']:
-				if 'inventory_items' in response_dict['responses']['GET_INVENTORY']['inventory_delta']:
-					for item in response_dict['responses']['GET_INVENTORY']['inventory_delta']['inventory_items']:
-						#print('item {}'.format(item))
-						if 'inventory_item_data' in item:
-							if 'pokemon' in item['inventory_item_data']:
-								pokemon = item['inventory_item_data']['pokemon']
-								_transfer_low_cp_pokemon(api,value,pokemon)
-								time.sleep(1.2)
 def transfer_low_cp_pokomon(api,value):
 	api.get_inventory()
 	response_dict = api.call()
