@@ -51,6 +51,7 @@ from s2sphere import CellId, LatLng
 log = logging.getLogger(__name__)
 
 pokemon_list=json.load(open('pokemon.json'))
+items_list=json.load(open('items.json'))
 
 global config
 
@@ -103,6 +104,27 @@ def get_position(locationName):
         json.dump({'lat': location.latitude, 'lng': location.longitude}, outfile)
 
     return (location.latitude, location.longitude, location.altitude)
+
+## RECODE THIS BLOCK
+def get_cellid(lat, long):
+    origin = CellId.from_lat_lng(LatLng.from_degrees(lat, long)).parent(15)
+    walk = [origin.id()]
+
+    # 10 before and 10 after
+    next = origin.next()
+    prev = origin.prev()
+    for i in range(10):
+        walk.append(prev.id())
+        walk.append(next.id())
+        next = next.next()
+        prev = prev.prev()
+    return ''.join(map(encode, sorted(walk)))
+
+def encode(cellid):
+    output = []
+    encoder._VarintEncoder()(output.append, cellid)
+    return ''.join(output)
+###########
 
 def main():
     print('[x] Initializing PokemonGO Automation v0.3')
@@ -158,6 +180,7 @@ def main():
     print('[#] Pokemon Storage: ' + str(working.getInventoryCount(pgoapi, 'pokemon')) + '/' + str(player['poke_storage']))
     print('[#] Stardust: ' + str(stardust))
     print('[#] Pokecoins: ' + str(pokecoins))
+    working.getPlayerInfo(pgoapi)
     print('[#]')
 
     print('[#]')
@@ -168,17 +191,24 @@ def main():
 
     # Automation Startup
     # 1 - Clear out inventory of lower than threshold pokemon
-    print ('[+] Cleaning up inventory..')
+    print ('[+] Cleaning up pokemon..')
     working.transferLowLevel(pgoapi, 200)
     print('[#]')
     print('[#]')
 
+    # 3 - Implement logic to determine which route to go down
+    # if count pokeballs < 10:
+    print('[#] Checking pokeball count...')
+
+
     # 2 - Implement catching pokemon
 
     print('[#]')
+    print('[#] Beginning to catch Pokemon')
     print('[#]')
 
     # 3 - Implement Spinning Pokestops.
+
 
     print('[#]')
     print('[#]')
