@@ -17,6 +17,7 @@ rest_time=1
 
 pokemon_list=json.load(open('pokemon.json'))
 
+## - Get count of inventory items and return the output for each
 def getInventoryCount(pgoapi, what):
 	# Get contents of inventory
 	pgoapi.get_inventory()
@@ -41,9 +42,36 @@ def getInventoryCount(pgoapi, what):
 		return itemcount
 	return '0'
 
+## - Convert pokemon ID into string
 def getPokemonName(id):
 	return str(pokemon_list[int(id)-1]['Name'])
 
+## - Get more player information
+def getPlayerInfo(pgoapi):
+	# Get contents of inventory
+	pgoapi.get_inventory()
+	response_dict = pgoapi.call()
+	if 'responses' in response_dict:
+		if 'GET_INVENTORY' in response_dict['responses']:
+			if 'inventory_delta' in response_dict['responses']['GET_INVENTORY']:
+				if 'inventory_items' in response_dict['responses']['GET_INVENTORY']['inventory_delta']:
+					pokecount = 0
+					itemcount = 1
+					for item in response_dict['responses']['GET_INVENTORY']['inventory_delta']['inventory_items']:
+						#print('item {}'.format(item))
+						if 'inventory_item_data' in item:
+							if 'player_stats' in item['inventory_item_data']:
+								playerdata = item['inventory_item_data']['player_stats']
+
+								nextlvlxp = (int(playerdata['next_level_xp']) - int(playerdata['experience']))
+
+								print('[#] -- Level: ' + str(playerdata['level']))
+								print('[#] -- Experience: ' + str(playerdata['experience']))
+								print('[#] -- Experience until next level: ' + str(nextlvlxp))
+								print('[#] -- Pokemon Captured: ' + str(playerdata['pokemons_captured']))
+								print('[#] -- Pokestops Visited: ' + str(playerdata['poke_stop_visits']))
+
+## - Convert low level pokemon into candies
 def transferLowLevel(pgoapi, value):
 	# Get contents of inventory
 	pgoapi.get_inventory()
@@ -73,31 +101,11 @@ def transferLowLevel(pgoapi, value):
 
 	print('[+] Removed ' + str(pokecount) + ' pokemon from bag')
 
+## - Transfer method
 def transferLowLevelCP(pgoapi,pokemon, name, cp):
 	pgoapi.release_pokemon(pokemon_id=pokemon['id'])
 	response_dict = pgoapi.call()
 	print("[-] " + name + "[CP"+str(cp)+"] exchanged successfully!")
-
-def _transfer_low_cp_pokemon(api,value,pokemon):
-	if 'cp' in pokemon and pokemon['cp'] < value:
-		print('need release this pokemon({}): {}'.format(value,pokemon))
-		api.release_pokemon(pokemon_id=pokemon['id'])
-		response_dict = api.call()
-		print('Response dictionary: \n\r{}'.format(json.dumps(response_dict, indent=2)))
-def transfer_low_cp_pokomon_with_dict(api,value,response_dict):
-	#print('Response dictionary: \n\r{}'.format(json.dumps(response_dict, indent=2)))
-	if 'responses' in response_dict:
-		if 'GET_INVENTORY' in response_dict['responses']:
-			if 'inventory_delta' in response_dict['responses']['GET_INVENTORY']:
-				if 'inventory_items' in response_dict['responses']['GET_INVENTORY']['inventory_delta']:
-					for item in response_dict['responses']['GET_INVENTORY']['inventory_delta']['inventory_items']:
-						#print('item {}'.format(item))
-						if 'inventory_item_data' in item:
-							if 'pokemon' in item['inventory_item_data']:
-								pokemon = item['inventory_item_data']['pokemon']
-								_transfer_low_cp_pokemon(api,value,pokemon)
-								time.sleep(1.2)
-
 
 def work_on_cell(cell,api,position,config):
 	print cell
@@ -146,14 +154,15 @@ def spawn_point_work(spawn_point,api,position):
 	api.set_position(*position)
 	api.player_update(latitude=lat,longitude=lng)
 	response_dict = api.call()
-	print('Response dictionary 1: \n\r{}'.format(json.dumps(response_dict, indent=2)))
+	#print('Response dictionary 1: \n\r{}'.format(json.dumps(response_dict, indent=2)))
 	time.sleep(2)
 	api.player_update(latitude=lat,longitude=lng)
 	response_dict = api.call()
-	print('Response dictionary 1: \n\r{}'.format(json.dumps(response_dict, indent=2)))
+	#print('Response dictionary 1: \n\r{}'.format(json.dumps(response_dict, indent=2)))
 	time.sleep(2)
 def convert_toposition(lat,lng,art):
     return (lat, lng, art)
+
 def encount_and_catch_pokemon(pokemon,api,position,config):
 	encounter_id=pokemon['encounter_id']
 	spawnpoint_id = pokemon['spawnpoint_id']
@@ -161,7 +170,7 @@ def encount_and_catch_pokemon(pokemon,api,position,config):
 	player_longitude = pokemon['longitude']
 	api.encounter(encounter_id=encounter_id,spawnpoint_id=spawnpoint_id,player_latitude=player_latitude,player_longitude=player_longitude)
 	response_dict = api.call()
-	print('Response dictionary: \n\r{}'.format(json.dumps(response_dict, indent=2)))
+	#print('Response dictionary: \n\r{}'.format(json.dumps(response_dict, indent=2)))
 	if response_dict and 'responses' in response_dict:
 		if 'ENCOUNTER' in response_dict['responses']:
 			if 'status' in response_dict['responses']['ENCOUNTER']:
@@ -171,6 +180,8 @@ def encount_and_catch_pokemon(pokemon,api,position,config):
 						pokemon=response_dict['responses']['ENCOUNTER']['wild_pokemon']
 						if 'pokemon_data' in pokemon and 'cp' in pokemon['pokemon_data']:
 							cp=pokemon['pokemon_data']['cp']
+
+							name = getPokemonName(pokemon['pokemon_data']['pokemon_id'])
 					while(True):
 						api.catch_pokemon(encounter_id = encounter_id,
 							pokeball = 1,
@@ -180,29 +191,34 @@ def encount_and_catch_pokemon(pokemon,api,position,config):
 							spin_modifier = 1,
 							NormalizedHitPosition = 1)
 						response_dict = api.call()
-						print('Response dictionary: \n\r{}'.format(json.dumps(response_dict, indent=2)))
+						print('[#] Attempting to catch a ' + str(name) + ' [CP'+str(cp)+']!')
+						#print('Response dictionary: \n\r{}'.format(json.dumps(response_dict, indent=2)))
 
 						if response_dict and \
 							'responses' in response_dict and \
 							'CATCH_POKEMON' in response_dict['responses'] and \
 							'status' in response_dict['responses']['CATCH_POKEMON']:
 							status = response_dict['responses']['CATCH_POKEMON']['status']
+							if status is 3:
+								print('[-] ' + str(name) + ' [CP' + str(cp) + '] ran away!')
+
 							if status is 2:
-								print('[-] Attempted to capture pokemon - failed.. trying again!')
+								print('[-] Attempted to capture '+ name +' [CP'+cp+'] - failed.. trying again!')
 								time.sleep(1.25)
 								continue
+
 							if status is 1:
 								if cp < config.cp:
-									print('Captured Pokemon! [CP' + str(cp) + '] - exchanging for candy')
-									transfer_low_cp_pokomon(api,config.cp)
+									print('Captured '+ name +'! [CP' + str(cp) + '] - exchanging for candy')
+									#transfer_low_cp_pokomon(api,config.cp)
 								else:
-									print('Captured Pokemon! [CP' + str(cp) + ']')
+									print('Captured '+ name +'! [CP' + str(cp) + ']')
 						break
 	time.sleep(5)
 def transfer_low_cp_pokomon(api,value):
 	api.get_inventory()
 	response_dict = api.call()
-	transfer_low_cp_pokomon_with_dict(api,value,response_dict)
+	#transfer_low_cp_pokomon_with_dict(api,value,response_dict)
 def search_seen_fort(fort,api,position):
 	lat=fort['latitude']
 	lng=fort['longitude']
@@ -283,7 +299,7 @@ def pokemon_working():
         exit(0)
         """
         steps = directions_result[0]['legs'][0]['steps']
-        print len(steps)
+        #print len(steps)
         for index, item in enumerate(steps):
             print index,item['start_location'],'-->',item['end_location'],'duration: ',item['duration']['value'],'sec'
 #start_working();
